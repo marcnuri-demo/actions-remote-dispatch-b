@@ -2,9 +2,8 @@ name: Remote Dispatch Action Initiator
 
 on:
   push:
-  schedule:
-    - cron: '0 12 * * *'
-  repository_dispatch:
+    branches:
+      - master
 
 jobs:
   ping-pong:
